@@ -11,11 +11,7 @@ export default function Index() {
   });
   return (
     <Container>
-      <motion.main
-        initial={{ opacity: 0, height: 0 }}
-        animate={{ opacity: 1, height: 'auto' }}
-        transition={{ duration: 1, delay: 1 }}
-        className='mt-24 text-neutral-50 md:mt-96'>
+      {/* <main className='mt-24 text-neutral-50 md:mt-40 '>
         <section className='  flex h-full w-full flex-col items-center  justify-between p-4 text-center md:p-0 '>
           <div>
             <h1 className='text-5xl font-medium md:text-8xl lg:text-9xl '>
@@ -35,7 +31,7 @@ export default function Index() {
             </div>
           </div>
         </section>
-      </motion.main>
+      </main> */}
     </Container>
   );
 }

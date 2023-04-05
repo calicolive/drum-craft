@@ -28,12 +28,12 @@ export const meta: MetaFunction = () => ({
 
 export default function App() {
   return (
-    <html lang='en'>
+    <html lang='en' className='scroll-smooth'>
       <head>
         <Meta />
         <Links />
       </head>
-      <body className='bg-neutral-950'>
+      <body className=' bg-neutral-950'>
         <Header />
         <Outlet />
         <ScrollRestoration />

@@ -9,6 +9,7 @@ import {
 } from '@remix-run/react';
 import stylesheet from '~/tailwind.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: stylesheet },
@@ -28,7 +29,7 @@ export const meta: MetaFunction = () => ({
 
 export default function App() {
   return (
-    <html lang='en' className='scroll-smooth'>
+    <html lang='en'>
       <head>
         <Meta />
         <Links />
@@ -36,7 +37,12 @@ export default function App() {
       <body className=' bg-neutral-950'>
         <Header />
         <Outlet />
-        <ScrollRestoration />
+        <Footer />
+        <ScrollRestoration
+        // getKey={(location) => {
+        //   return location.pathname;
+        // }}
+        />
         <Scripts />
         <LiveReload />
       </body>

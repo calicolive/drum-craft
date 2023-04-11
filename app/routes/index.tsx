@@ -51,7 +51,7 @@ export default function Index() {
                 Your Virtual <br /> Drum Machine
               </HeroTitle>
               <HeroSubtitle>
-                Design your drum samples <br /> on-the-go for free!
+                Design your drum samples on-the-go for free!
               </HeroSubtitle>
             </Hero>
             <Link
